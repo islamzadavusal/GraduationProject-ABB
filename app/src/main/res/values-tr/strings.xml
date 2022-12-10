@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Borani Restaurant</string>
+    <string name="textView1">Harika lezzetler sizleri bekliyor!</string>
+    <string name="textView2">Bizi tanıyın:</string>
+    <string name="AddToCart">SEPETE EKLE</string>
+    <string name="btnConfirmCart">SEPETİ ONAYLA</string>
+    <string name="textViewConfirm">Ödemeniz başarılı oldu!</string>
+    <string name="textViewLogin1">Hesabınıza giriş yapın</string>
+    <string name="textviewLogin2">Tekrar hoş geldiniz, lütfen bilgilerinizi giriniz.</string>
+    <string name="checkBoxLogin">Beni hatırla</string>
+    <string name="textViewLogin4">Parolanızı mı unuttunuz ?</string>
+    <string name="buttonLogin">Giriş yapmak</string>
+    <string name="textViewLogin3">Hesabınız yok mu?</string>
+    <string name="textViewLogin5">Üye olmak</string>
+    <string name="textViewSign1">Hesap oluştur</string>
+    <string name="textViewSign2">Bir hesap oluşturmaya başlamak için şimdi kaydolun.</string>
+    <string name="CheckBoxSign">Hizmet Şartlarını okudum ve kabul ediyorum</string>
+    <string name="buttonSign">Başlamak</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="detailFragment"
+            type="com.example.graduationproject.ui.fragments.DetailFragment" />
+        <variable
+            name="toolbarDetailTitle"
+            type="String" />
+        <variable
+            name="food"
+            type="com.example.graduationproject.data.entity.Foods" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color2"
+        tools:context=".ui.fragments.DetailFragment">
+
+        <TextView
+            android:id="@+id/textViewCategoryDetail"
+            android:layout_width="121dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/cinzel"
+            android:gravity="center"
+            android:text="Category"
+            android:textColor="@color/color4"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNameDetail" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="@{toolbarDetailTitle}" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/satisfy"
+                android:text=" Food Detail "
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                tools:layout_editor_absoluteX="170dp"
+                tools:layout_editor_absoluteY="9dp" />
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <Button
+            android:id="@+id/AddToCart"
+            android:layout_width="280dp"
+            android:layout_height="62dp"
+            android:layout_marginBottom="50dp"
+            android:text="@string/AddToCart"
+            android:textColor="@color/color4"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewDetail"
+            android:layout_width="278dp"
+            android:layout_height="225dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarDetail"
+            app:srcCompat="@drawable/test_image" />
+
+        <TextView
+            android:id="@+id/textViewNameDetail"
+            android:layout_width="346dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/cookie"
+            android:gravity="center"
+            android:text="Name"
+            android:textColor="@color/color4"
+            android:textSize="60sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewDetail" />
+
+        <TextView
+            android:id="@+id/textViewPriceDetail"
+            android:layout_width="122dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/josefin_sans_semibold"
+            android:gravity="center"
+            android:text="Price"
+            android:textColor="@color/color4"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCategoryDetail" />
+
+        <Button
+            android:id="@+id/btnminus"
+            android:layout_width="66dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="75dp"
+            android:text="-"
+            android:textColor="@color/color4"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/AddToCart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPriceDetail" />
+
+        <Button
+            android:id="@+id/btnplus"
+            android:layout_width="66dp"
+            android:layout_height="53dp"
+            android:layout_marginEnd="75dp"
+            android:text="+"
+            android:textColor="@color/color4"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/AddToCart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPriceDetail" />
+
+        <TextView
+            android:id="@+id/textViewOrderDetail"
+            android:layout_width="107dp"
+            android:layout_height="39dp"
+            android:fontFamily="@font/josefin_sans_semibold"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="1"
+            android:textColor="@color/color4"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/AddToCart"
+            app:layout_constraintEnd_toStartOf="@+id/btnplus"
+            app:layout_constraintStart_toEndOf="@+id/btnminus"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPriceDetail" />
+
+        <ImageView
+            android:id="@+id/imageViewtoCart"
+            android:layout_width="38dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarDetail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/toolbarDetail"
+            app:srcCompat="@drawable/gocart_image" />
+
+        <ImageView
+            android:id="@+id/imageViewtoMenu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarDetail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/toolbarDetail"
+            app:srcCompat="@drawable/back_icon" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

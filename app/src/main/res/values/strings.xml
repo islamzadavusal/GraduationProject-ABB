@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Borani Restaurant</string>
+    <string name="textView1">Great flavors are waiting for you!</string>
+    <string name="textView2">Get to know us:</string>
+    <string name="AddToCart">ADD TO CART</string>
+    <string name="btnConfirmCart">CONFIRM CART</string>
+    <string name="textViewConfirm">Your payment was successful!</string>
+    <string name="textViewLogin1">Log in to your Account</string>
+    <string name="textviewLogin2">Welcome back, please enter your details.</string>
+    <string name="checkBoxLogin">Remember me</string>
+    <string name="textViewLogin4">Forgot Password ?</string>
+    <string name="buttonLogin">Log in</string>
+    <string name="textViewLogin3">Don`t have an account ?</string>
+    <string name="textViewLogin5">Sign Up</string>
+    <string name="textViewSign1">Create an Account</string>
+    <string name="textViewSign2">Sign up now to get started with an account.</string>
+    <string name="CheckBoxSign">I have read and agree to the Terms of Service</string>
+    <string name="buttonSign">Get Started</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

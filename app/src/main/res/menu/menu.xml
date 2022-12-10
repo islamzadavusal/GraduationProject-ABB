@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/home_icon"
+        android:title="Home" />
+    <item
+        android:id="@+id/menuFragment"
+        android:icon="@drawable/menu_icon"
+        android:title="Menu" />
+    <item
+        android:id="@+id/feedbackFragment"
+        android:icon="@drawable/feedback_icon"
+        android:title="Feedback" />
+    <item
+        android:id="@+id/myCartFragment"
+        android:icon="@drawable/mycart_icon"
+        android:title="My Cart" />
+    <item
+        android:id="@+id/accountFragment"
+        android:icon="@drawable/account_icon"
+        android:title="Account" />
+</menu>

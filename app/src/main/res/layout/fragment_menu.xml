@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="toolbarMenuTitle"
+            type="String" />
+        <variable
+            name="menuFragment"
+            type="com.example.graduationproject.ui.fragments.MenuFragment" />
+        <variable
+            name="adapter"
+            type="com.example.graduationproject.ui.adapter.FoodsAdapter" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color2"
+        tools:context=".ui.fragments.MenuFragment">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="@{toolbarMenuTitle}" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/satisfy"
+                android:text=" Menu "
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                tools:layout_editor_absoluteX="170dp"
+                tools:layout_editor_absoluteY="9dp" />
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMenu"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:adapter="@{adapter}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnMeals" />
+
+        <Button
+            android:id="@+id/btnMeals"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/color5"
+            android:text="meals"
+            android:textColor="@color/color4"
+            app:layout_constraintEnd_toStartOf="@+id/btnDeserts"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarMenu" />
+
+        <Button
+            android:id="@+id/btnDeserts"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/color5"
+            android:text="deserts"
+            android:textColor="@color/color4"
+            app:layout_constraintEnd_toStartOf="@+id/btnDrinks"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnMeals"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarMenu" />
+
+        <Button
+            android:id="@+id/btnDrinks"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/color5"
+            android:text="drinks"
+            android:textColor="@color/color4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnDeserts"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarMenu" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

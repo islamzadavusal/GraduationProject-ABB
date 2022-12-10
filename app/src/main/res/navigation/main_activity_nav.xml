@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.graduationproject.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.graduationproject.ui.fragments.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/toDetail"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/feedbackFragment"
+        android:name="com.example.graduationproject.ui.fragments.FeedbackFragment"
+        android:label="fragment_feedback"
+        tools:layout="@layout/fragment_feedback" />
+    <fragment
+        android:id="@+id/myCartFragment"
+        android:name="com.example.graduationproject.ui.fragments.MyCartFragment"
+        android:label="fragment_my_cart"
+        tools:layout="@layout/fragment_my_cart" >
+        <argument
+            android:name="foodscartsincart"
+            app:argType="com.example.graduationproject.data.entity.FoodsCart" />
+        <action
+            android:id="@+id/toConfirm"
+            app:destination="@id/confirmCartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.graduationproject.ui.fragments.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.graduationproject.ui.fragments.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/DetailtoCart"
+            app:destination="@id/myCartFragment" />
+        <argument
+            android:name="foodsindetail"
+            app:argType="com.example.graduationproject.data.entity.Foods" />
+        <action
+            android:id="@+id/toMenu"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmCartFragment"
+        android:name="com.example.graduationproject.design.ConfirmCartFragment"
+        android:label="fragment_confirm_cart"
+        tools:layout="@layout/fragment_confirm_cart" />
+</navigation>

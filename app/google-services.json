@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "343228150730",
+    "firebase_url": "https://restaurant-81ce7-default-rtdb.firebaseio.com",
+    "project_id": "restaurant-81ce7",
+    "storage_bucket": "restaurant-81ce7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343228150730:android:00bbc2e7e1e9c3e38cd533",
+        "android_client_info": {
+          "package_name": "com.example.graduationproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343228150730-dt0upi04kcpr54ei7ru96m0i3751d146.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIAR9XRVvcqv3VkuOjA90ym39TSQoNerA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343228150730-dt0upi04kcpr54ei7ru96m0i3751d146.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
